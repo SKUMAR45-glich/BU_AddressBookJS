@@ -52,7 +52,7 @@ let contact5 = new Contact('Adipti', 'Gupta', 'ITSector', 'Hyderabad', 'Telagana
 console.log(contact1);                                                                      //Display the first element
 
 
-//UC 3 : Address Book Array 
+//Address Book Array 
 
 let AddressBook = [];                                                                        //Declaration of Array
 
@@ -66,7 +66,7 @@ console.log(AddressBook);                                                       
 
 
 
-//UC4 : find and update city 
+//Find and update city 
 
 let cityToFind = 'Adipti';                                                                                    //Name of person City to update
 let contact = AddressBook.find(c => c.firstName == cityToFind);                                               //Act
@@ -75,7 +75,7 @@ contact.city = 'Banglore';                                                      
 console.log(contact);                                                                                        //Display the Values
 
 
-//UC5 : delete Contact
+//Delete Contact
 
 let contactToDelete = 'Rajeev';                                                                         //Name of the contact to be deleted
 let index = AddressBook.findIndex(c => c.firstName == contactToDelete);                                 //Act
@@ -85,8 +85,14 @@ console.log(AddressBook);
 
 
 
-//UC6 : Number Of Contacts
+//Number Of Contacts
 
 let count = 0;                                                                                           //Initailize Variable
 let num = AddressBook.reduce((count) => count + 1, 0);                                                   //Count the number
 console.log('Number of Contacts : ', num);                                                               
+
+
+//Check Duplicates
+
+let checkDuplicate = contact => AddressBook.filter(c => c.firstName == contact.firstName).length != 0;
+console.log(checkDuplicate(contact));
