@@ -39,6 +39,7 @@ let validate = {
 };
 
 
+//Add details
 
 let contact1 = new Contact('Saurabh', 'Kumar', 'Airoli', 'Mumbai', 'Maharastra', '478524', '91 9038880216', 'sk@gmail.com');
 let contact2 = new Contact('Rajeev', 'Ranjan', 'Rajendra', 'Patna', 'Bihar', '147852', '91 8100802402', 'rr@gail.com');
@@ -46,4 +47,20 @@ let contact3 = new Contact('Piyush', 'Rawat', 'Airport', 'Mumbai', 'Maharastra',
 let contact4 = new Contact('Saurabh', 'Kiran', 'railway', 'Noida', 'UP', '147852', '91 7418529630', 'skiran@gmail.com');
 let contact5 = new Contact('Adipti', 'Gupta', 'ITSector', 'Hyderabad', 'Telagana', '174162', '91 7894561230', 'agupta@gmail.com');
 
-console.log(contact1);
+
+
+console.log(contact1);                                                                      //Display the first element
+
+
+//UC 3 : Address Book Array 
+
+let AddressBook = [];                                                                        //Declaration of Array
+
+AddressBook.push(contact1);                                                                  //Push the elements
+AddressBook.push(contact2);
+AddressBook.push(contact3);
+AddressBook.push(contact4);
+AddressBook.push(contact5);
+
+console.log(AddressBook);                                                                   //View the elements
+
