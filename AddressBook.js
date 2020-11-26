@@ -83,3 +83,10 @@ AddressBook.splice(index, 1);                                                   
 
 console.log(AddressBook);                       
 
+
+
+//UC6 : Number Of Contacts
+
+let count = 0;                                                                                           //Initailize Variable
+let num = AddressBook.reduce((count) => count + 1, 0);                                                   //Count the number
+console.log('Number of Contacts : ', num);                                                               
