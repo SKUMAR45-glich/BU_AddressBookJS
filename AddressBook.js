@@ -64,3 +64,12 @@ AddressBook.push(contact5);
 
 console.log(AddressBook);                                                                   //View the elements
 
+
+
+//UC4 : find and update city 
+
+let cityToFind = 'Adipti';                                                                                    //Name of person City to update
+let contact = AddressBook.find(c => c.firstName == cityToFind);                                               //Act
+contact.city = 'Banglore';                                                                                   //Update
+
+console.log(contact);                                                                                        //Display the Values
