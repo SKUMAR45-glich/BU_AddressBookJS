@@ -96,3 +96,13 @@ console.log('Number of Contacts : ', num);
 
 let checkDuplicate = contact => AddressBook.filter(c => c.firstName == contact.firstName).length != 0;
 console.log(checkDuplicate(contact));
+
+
+//Search and View details By City
+let cityToView = 'Mumbai';
+let contacts = AddressBook.filter(c => c.city == cityToView);
+if (!contacts) {
+    let error = "Wrong City Entered";
+    console.log(error);
+}
+console.log(contacts);
