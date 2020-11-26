@@ -73,3 +73,13 @@ let contact = AddressBook.find(c => c.firstName == cityToFind);                 
 contact.city = 'Banglore';                                                                                   //Update
 
 console.log(contact);                                                                                        //Display the Values
+
+
+//UC5 : delete Contact
+
+let contactToDelete = 'Rajeev';                                                                         //Name of the contact to be deleted
+let index = AddressBook.findIndex(c => c.firstName == contactToDelete);                                 //Act
+AddressBook.splice(index, 1);                                                                           //Splice: Delete
+
+console.log(AddressBook);                       
+
