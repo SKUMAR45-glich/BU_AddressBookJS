@@ -99,6 +99,7 @@ console.log(checkDuplicate(contact));
 
 
 //Search and View details By City
+
 let cityToView = 'Mumbai';
 let contacts = AddressBook.filter(c => c.city == cityToView);
 if (!contacts) {
@@ -106,3 +107,17 @@ if (!contacts) {
     console.log(error);
 }
 console.log(contacts);
+
+
+
+
+//Sorting By name
+
+AddressBook.sort((c1, c2) => c1.firstName < c2.firstName ? -1 : c1.firstName > c2.firstName ? 1 : 0);                           //Sorting Function by Firstname
+
+console.log('Sort By First Name : ', AddressBook);
+
+
+let sortByCity = addressBook => addressBook.sort((c1, c2) => c1.city < c2.city ? -1 : c1.city > c2.city ? 1 : 0);                 //Sorting Function by City
+
+console.log('Sort By city : ', sortByCity(AddressBook));
